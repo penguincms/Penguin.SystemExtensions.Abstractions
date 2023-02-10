@@ -5,8 +5,11 @@ namespace Penguin.SystemExtensions.Abstractions.Interfaces
     public interface IPropertyDictionary<TKey, TReturn>
     {
         int Count { get; }
+
         IEnumerable<TKey> Keys { get; }
+
         IEnumerable<TReturn> Values { get; }
+
         TReturn this[TKey key] { get; }
 
         bool ContainsKey(TKey key);
